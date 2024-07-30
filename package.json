@@ -1,6 +1,6 @@
 {
   "name": "vuetify-group-select",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "author": "Kaue Avila <trabalho.kaue@hotmail.com>",
   "type": "commonjs",
   "repository": {
@@ -8,12 +8,12 @@
     "url": "https://github.com/kingkaibr/Vuetify-tree-select.git"
   },
   "description": "A reusable Vuetify group-select component",
-  "main": "dist/vuetify-groupselect.umd.mjs",
-  "module": "dist/vuetify-groupselect.es.mjs",
+  "main": "dist/vuetify-group-select.umd.mjs",
+  "module": "dist/vuetify-group-select.es.mjs",
   "exports": {
     ".": {
-      "import": "./dist/vuetify-groupselect.es.mjs",
-      "require": "./dist/vuetify-groupselect.umd.mjs"
+      "import": "./dist/vuetify-group-select.es.mjs",
+      "require": "./dist/vuetify-group-select.umd.mjs"
     }
   },
   "files": [

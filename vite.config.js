@@ -6,9 +6,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'src/index.js',
-      name: 'VuetifyMultiSelect',
+      name: 'VuetifyGroupSelect',
       formats: ['es', 'umd'],
-      fileName: (format) => `vuetify-multiselect.${format}.mjs`
+      fileName: (format) => `vuetify-group-select.${format}.mjs`
     },
     rollupOptions: {
       // Externalize deps that shouldn't be bundled into the library

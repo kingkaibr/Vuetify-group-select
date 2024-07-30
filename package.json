@@ -2,6 +2,10 @@
   "name": "vuetify-treeview-select",
   "version": "1.0.0",
   "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kingkaibr/Vuetify-tree-select.git"
+  },
   "description": "A reusable Vuetify multi-select component",
   "main": "dist/vuetify-multiselect.umd.mjs",
   "module": "dist/vuetify-multiselect.es.mjs",

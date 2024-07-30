@@ -60,6 +60,10 @@
       allSelected(group) {
         let allFound = this.modelValue.filter((v) => v.group == group);
         let allFound2 = this.items.filter((v) => v.group == group);
+        if(allFound2.length == 0){
+          allFound = this.modelValue.filter((v) => v.value == group);
+          return allFound.length == 1
+        }
         return allFound.length > 0 && allFound.length === allFound2.length;
       },
       toggle(item) {
@@ -71,7 +75,16 @@
       },
       toggleAll(group) {
         const groupItems = this.items.filter((v) => v.group === group);
-        if (this.modelValue.some((v) => v.group === group)) {
+        if(groupItems.length == 0){
+          if(this.modelValue.some((v) => v.value === group)){
+            this.$emit('update:modelValue', this.modelValue.filter((v) => v.value != group));
+          } else {
+            let headerValue = this.items.filter((v) => v.value == group)
+            this.$emit('update:modelValue', [...this.modelValue, ...headerValue]);
+          }
+          
+        }
+        else if (this.modelValue.some((v) => v.group === group)) {
           this.$emit('update:modelValue', this.modelValue.filter((v) => v.group !== group));
         } else {
           this.$emit('update:modelValue', [...this.modelValue, ...groupItems]);

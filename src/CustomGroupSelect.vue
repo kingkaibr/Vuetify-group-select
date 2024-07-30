@@ -41,7 +41,7 @@
   
   <script>
   export default {
-    name: 'CustomMultiSelect',
+    name: 'CustomGroupSelect',
     props: {
       items: {
         type: Array,

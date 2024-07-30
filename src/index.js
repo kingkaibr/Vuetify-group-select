@@ -1,3 +1,3 @@
-import CustomMultiSelect from './CustomMultiSelect.vue';
+import CustomGroupSelect from './CustomGroupSelect.vue';
 
-export default CustomMultiSelect;
+export default CustomGroupSelect;

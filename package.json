@@ -1,25 +1,26 @@
 {
-  "name": "vuetify-treeview-select",
-  "version": "1.0.1",
+  "name": "vuetify-group-select",
+  "version": "1.0.3",
   "author": "Kaue Avila <trabalho.kaue@hotmail.com>",
   "type": "commonjs",
   "repository": {
     "type": "git",
     "url": "https://github.com/kingkaibr/Vuetify-tree-select.git"
   },
-  "description": "A reusable Vuetify multi-select component",
-  "main": "dist/vuetify-multiselect.umd.mjs",
-  "module": "dist/vuetify-multiselect.es.mjs",
+  "description": "A reusable Vuetify group-select component",
+  "main": "dist/vuetify-groupselect.umd.mjs",
+  "module": "dist/vuetify-groupselect.es.mjs",
   "exports": {
     ".": {
-      "import": "./dist/vuetify-multiselect.es.mjs",
-      "require": "./dist/vuetify-multiselect.umd.mjs"
+      "import": "./dist/vuetify-groupselect.es.mjs",
+      "require": "./dist/vuetify-groupselect.umd.mjs"
     }
   },
   "files": [
     "dist",
     "README.md",
-    "screenshot.png"
+    "screenshot.png",
+    "LICENSE"
   ],
   "scripts": {
     "build": "vite build",
@@ -35,5 +36,6 @@
     "vite": "^3.0.0",
     "vue": "^3.0.0",
     "vuetify": "^3.0.0"
-  }
+  },
+  "license": "MIT" 
 }

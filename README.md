@@ -1,9 +1,9 @@
 
 This README includes installation instructions, usage examples, and explanations of the component's props and methods.
 
-# Vuetify MultiSelect
+# Vuetify Group Select
 
-A reusable Vuetify multi-select component that allows for selecting multiple items with support for grouped headers. 
+A reusable Vuetify group-select component that allows for selecting multiple items with support for grouped headers. 
 
 
 ## Features
@@ -18,7 +18,7 @@ A reusable Vuetify multi-select component that allows for selecting multiple ite
 First, install the library via npm:
 
 ```bash
-npm install vuetify-multiselect
+npm install vuetify-group-select
 ```
 ## Usage
 Import the component and Vuetify styles in your main entry file (e.g., main.js or main.ts):
@@ -28,12 +28,12 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import Vuetify from 'vuetify';
 import 'vuetify/dist/vuetify.min.css';
-import VuetifyMultiSelect from 'vuetify-multiselect';
+import VuetifyGroupSelect from 'vuetify-group-select';
 
 const app = createApp(App);
 
 app.use(Vuetify);
-app.component('VuetifyMultiSelect', VuetifyMultiSelect);
+app.component('VuetifyGroupSelect', VuetifyGroupSelect);
 
 app.mount('#app');
 
@@ -43,7 +43,7 @@ Use the component in your Vue component (e.g., App.vue):
 <template>
   <v-app>
     <v-container>
-      <vuetify-multi-select
+      <vuetify-group-select
         v-model="selectedItems"
         :items="items"
         label="Select Items"

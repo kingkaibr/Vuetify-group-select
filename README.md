@@ -71,6 +71,6 @@ export default {
 </script>
 ````
 ## Espected Result:
-![Alt text](./screenshot.png)
+![Alt text](https://raw.githubusercontent.com/kingkaibr/Vuetify-tree-select/main/screenshot.png)
 
 

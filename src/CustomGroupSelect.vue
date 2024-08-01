@@ -67,11 +67,15 @@ export default {
       return allFound.length > 0 && allFound.length === allFound2.length;
     },
     isSelected(item) {
-      return this.modelValue.some((v) => v.value === item.value);
+      return this.modelValue.some((v) => v.value === item.value && item.group == v.group);
     },
     toggle(item) {
       if (this.isSelected(item)) {
-        this.$emit('update:modelValue', this.modelValue.filter((v) => v.value !== item.value));
+        const index = this.modelValue.findIndex((v) => v.value === item.value && v.group === item.group);
+        if (index !== -1) {
+          this.modelValue.splice(index, 1);
+        }
+        this.$emit('update:modelValue', this.modelValue);
       } else {
         this.$emit('update:modelValue', [...this.modelValue, item]);
       }
